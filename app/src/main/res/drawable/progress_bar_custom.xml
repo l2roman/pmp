@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Задній план (фон + рамка) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <!-- Білий фон -->
+            <solid android:color="#FFFFFF" />
+            <!-- Синя рамка -->
+            <stroke
+                android:width="2dp"
+                android:color="#2196F3" />
+            <!-- Заокруглені кути -->
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+    <!-- Прогрес (синя заливка) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <!-- Синій колір прогресу -->
+                <solid android:color="#2196F3" />
+                <!-- Заокруглені кути, щоб збігалися з фоном -->
+                <corners android:radius="10dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
